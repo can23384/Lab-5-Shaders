@@ -1,7 +1,43 @@
-# Lab 4: Carga de modelos
+# Lab 5: Shaders
 
 
-## 🧱 Estructura del Proyecto
+## Planetas
+
+  ⭐ Estrella
+
+  🌎 Planeta Rocoso
+
+  🪐 Planeta Gaseoso
+
+  🤖 Planeta Cibernético
+
+  🌋 Planeta de Magma 
+
+  🟩 Planeta Plano
+
+  🌙 Luna 
+  🪐 Sistema de Anillos  
+
+## 🎮 Controles
+
+  `1`               Estrella
+  `2`               Planeta Rocoso
+  `3`               Gigante Gaseoso
+  `4`               Planeta Cibernético
+  `5`               Planeta de Magma
+  `6`               Planeta Plano
+
+  `←/→/↑/↓`         Mover objeto
+
+  `Q / W / E / R`   Rotar
+
+  `A / S`           Escalar
+
+  `P`               Guardar captura
+
+
+
+## 📂 Archivos principales
 
 ```
 src/
@@ -12,10 +48,10 @@ src/
  ├── fragment.rs      # Representa un fragmento (píxel)
  ├── shaders.rs       # Vertex shader básico
  ├── obj.rs           # Carga de modelos .obj
+ ├── ring.obj`        # Modelo de anillo plano para planeta gaseoso
  └── matrix.rs        # Utilidades de matrices 4x4
 ```
 
----
 
 ## ⚙️ Requisitos
 
@@ -26,53 +62,51 @@ src/
   [dependencies]
   raylib = "3.7"
   tobj = "3.0"
-  ```
 
----
 
-## 🕹️ Controles
+## 📌 Ejecución
 
-| ↑ / ↓ / ← / → | Mover el modelo |
-
-| A / S | Escalar |
-
-| Q / W / E / R | Rotar |
-
-| **P** | Guardar imagen (`render.png`) |
-
----
-
-## 🖼️ Guardar Imagen
-
-El framebuffer puede exportarse a una imagen **PNG** o **JPG**.  
-Cuando presiones **P**, el programa generará el archivo:
-
-```
-render.png
-```
-
-Este archivo se guardará en la carpeta raíz del proyecto (junto al `Cargo.toml`).
-
-**Ejemplo:**
-
-![Render de ejemplo](render.png)
-
----
-
-## 📦 Ejecución
-
-Coloca tu modelo `.obj` en la carpeta `src/` y asegúrate de nombrarlo:
-
-```
-nave_espacial.obj
-```
-
-Luego ejecuta:
-
-```bash
+``` bash
 cargo run
 ```
 
-Y presiona **P** para guardar una captura del render.
+Capturar imagen con `P`.
 
----
+
+------------------------------------------------------------------------
+
+## 🎥 Video de Funcionamiento
+
+
+    [[VI](https://youtu.be/kO8CZettksI)](https://youtu.be/kO8CZettksI)
+
+------------------------------------------------------------------------
+
+## 🖼 Capturas de los Planetas
+
+
+### ☀️ Estrella
+
+![Estrella](./screenshots/sol.png)
+
+### 🌎 Planeta Rocoso + Luna
+
+![Rocoso](./screenshots/rocoso.png)
+
+### 🪐 Gigante Gaseoso + Anillos
+
+![Gaseoso](./screenshots/gaseoso.png)
+
+### 🤖 Planeta Cibernético
+
+![Cibernetico](./screenshots/cibernetico.png)
+
+### 🌋 Planeta de Magma
+
+![Magma](./screenshots/volcan.png)
+
+### 🟩 Planeta Plano
+
+![Plano](./screenshots/plano.png)
+
+------------------------------------------------------------------------

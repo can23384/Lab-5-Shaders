@@ -78,7 +78,7 @@ Capturar imagen con `P`.
 ## 🎥 Video de Funcionamiento
 
 
-    [[VI](https://youtu.be/kO8CZettksI)](https://youtu.be/kO8CZettksI)
+https://youtu.be/kO8CZettksI
 
 ------------------------------------------------------------------------
 
